@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Login Form</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+</head>
+<body>
+  <section class="container">
+    <div class="login">
+      <h1>Register at Gtcube - Seller</h1>
+        <p><input id='email' type="text" name="login" value="" placeholder="Username or Email"></p>
+        <p><input id='password' type="password" name="password" value="" placeholder="Password"></p>
+        <p class="remember_me">
+        </p>
+        <p id='register-btn' class="waves-effect waves-light btn"><input id ='register' type="submit" name="commit" value="Register"></p>
+    </div>
+  </section>
+
+</body>
+<script>
+  //url: 'http://127.0.0.1:8000/user/register/',
+  // Send a POST request
+$('#register-btn').click(function(){
+  var email = $('#email').val()
+  var password = $('#password').val()
+  axios({
+  method: 'post',
+  url: 'https://gtcube.herokuapp.com/seller/register/',
+  data: {
+    email: email,
+    password: password
+  }
+}).then(function(response){
+  $('.container').html("<div class='card blue-grey darken-1'><div class='card-content white-text'><span class='card-title'>Registration Successful</span><p> A verification email has been sent to your email address. Please verify your account to login.</div></div> ")
+  console.log(response.data)
+  }).catch(function(error){
+    console.log(error.response.data['email'])
+  });
+})  
+
+
+</script>
+
+</html>
