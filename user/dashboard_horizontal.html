@@ -122,23 +122,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   -webkit-border-radius: 5px 5px 5px;
   border-radius: 5px 5px 5px;
 }
-/*.post_title h6{
-/*  position: relative;
+.post_title h6{
+  position: relative;
 /*  font-size: 1.5em;
   font-weight: bold;*/
- /* padding: 5px 20px 5px 15px;
+  padding: 5px 20px 5px 15px;
   margin: -10px 0px 0px -10px;
   color: #ffffff;
   background-color: #57bc90;
   /*text-shadow: 0px 1px 2px #bbb;*/
-  /*-webkit-box-shadow: 0px 2px 4px #888;
+  -webkit-box-shadow: 0px 2px 4px #888;
   -moz-box-shadow: 0px 2px 4px #888;
   box-shadow: 0px 2px 4px #888;
-  text-align:left;*/
-/*}
+  text-align:left;
+}
 
 .post_title h6:after{
- /* content: ' ';
+  content: ' ';
   position: absolute;
   width: 0;
   height: 0;
@@ -146,11 +146,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   top: 100%;
   border-width: 5px 5px;
   border-style: solid;
-  border-color: #00562A #00562A transparent transparent;*/
-/*}*/
+  border-color: #00562A #00562A transparent transparent;
+}
 
-.padding_post{
-  min-width:100%;
+.dummy_div{
 }
 
 .card_title{
@@ -159,10 +158,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77c9d4+0,77c9d4+0,57bc90+100 */
   background: #3F51B5; /* Old browsers */
   padding-bottom:10px;
-}
 
-.main_post_content{
-  
+
 }
 
 .chip{
@@ -182,6 +179,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
 }
 
 .post_tags{
+  background-color:#57bc90;
   padding-top:4px;
 }
 
@@ -216,17 +214,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   cursor:pointer;
 }
 
-.post_title{
-  padding-left:20px;
-  padding-right:20px;
-  font-weight:bold;
-  color:#66b9bf;
-}
-
-.post{
-  margin-left:10%;
-  margin-top:4%;
-}
 
 /*------------------------------------------------CSS for footer----------------------------------------------------*/
 
@@ -317,27 +304,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
 
     <!-- Side Nav Bar Ends here -->
         
-    <!-- Main Content starts here-->
+    <!-- Main Content -->
       <div class="col s12 m10 l10" id='maincontent'>
       <!-- Buttons to filter -->
       <div id='main_button'>
       </div>
-      <!-- Main text starts here -->
+      <!-- Blog post list -->
       <div id='main_text'>
         <div class='row'>
-          <!-- Post 1 starts here -->
-          <div class='col s12 m10 l10'>
-            <div class='row post z-depth-1' id='post1'>
-              <!-- Image + Post text div  starts here -->
-               <!-- Image div  starts here -->
-                <div class="col s5 m5 l5 post_image" style='padding:0px;'>
+        <!--  ..................................... Post 1 in a row...................................................... -->
+          <div class='col s12 m6 l6'>
+            <div class='post z-depth-1' id='post1'>
+              <div class='post_without_tags'>
+                <div class="post_image" style='padding:0px;'>
                   <img src="../taj.png" width='100%'>
                 </div>
-                 <!-- Image  div  ends here -->
-                  <!-- Post text div  starts here -->
-                <div class='col s7 m7 l7 post_text'>
                 <div class='post_title'>
-                   <h5>Tips to crack CAT 2018 exam - Quantitative Aptitute section</h5>
+                   <h6>Taj Mahal as Title</h6>
                 </div>
                 <div class='author-date'>
                   <div class='row'>
@@ -347,17 +330,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
                 </div>
                 <div class="card_content">
                   <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
                   I am convenient because I require little markup to use effectively.</p>
                 </div>
               </div>
-               <!--  Post text div  ends here -->
-             <!-- Image + Post text div  ends here -->
-             <!-- Tags div starts  here -->
-             <!--  <div class='col s12 m12 l12'>
                 <div class='post_tags'>
                   <div class="chip"><a href=''>Tag 1</a></div>
                   <div class="chip"><a href=''>MBA</a></div>
@@ -365,24 +340,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
                   <div class="chip"><a href=''>Data Interpretation</a></div>
                   <div class="chip"><a href=''>Data Interpretation</a></div>
                 </div>
-              </div> -->
-              <!-- Tags div  ends here -->
-          </div>
-        </div>
-        <!-- Post 1 ends here -->
-        <!-- Post 2 starts here -->
-          <div class='col s12 m10 l10'>
-            <div class='row post z-depth-1' id='post1'>
-              <!-- Image + Post text div  starts here -->
-               <!-- Image div  starts here -->
-                <div class="col s5 m5 l5 post_image" style='padding:0px;'>
+              </div>
+            </div>
+       
+      <!--  ..................................... Post 2 in a row...................................................... -->
+          <div class='col s12 m6 l6'>
+            <div class='post z-depth-1' id='post1'>
+              <div class='post_without_tags'>
+                <div class="post_image" style='padding:0px;'>
                   <img src="../taj.png" width='100%'>
                 </div>
-                 <!-- Image  div  ends here -->
-                  <!-- Post text div  starts here -->
-                <div class='col s7 m7 l7 post_text'>
                 <div class='post_title'>
-                   <h5>Tips to crack CAT 2018 exam - Quantitative Aptitute section</h5>
+                   <h6>Taj Mahal as Title</h6>
                 </div>
                 <div class='author-date'>
                   <div class='row'>
@@ -392,17 +361,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
                 </div>
                 <div class="card_content">
                   <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
                   I am convenient because I require little markup to use effectively.</p>
                 </div>
               </div>
-               <!--  Post text div  ends here -->
-             <!-- Image + Post text div  ends here -->
-             <!-- Tags div starts  here -->
-             <!--  <div class='col s12 m12 l12'>
                 <div class='post_tags'>
                   <div class="chip"><a href=''>Tag 1</a></div>
                   <div class="chip"><a href=''>MBA</a></div>
@@ -410,16 +371,98 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
                   <div class="chip"><a href=''>Data Interpretation</a></div>
                   <div class="chip"><a href=''>Data Interpretation</a></div>
                 </div>
-              </div> -->
-              <!-- Tags div  ends here -->
-          </div>
+              </div>
+            </div>
+      
         </div>
-        <!-- Post 2 ends here -->
+         <!--  ..................................... All 2 posts in  row1 ends...................................................... -->
+         <div class='row'>
+        <!--  ..................................... Post 1 in a row...................................................... -->
+          <div class='col s12 m4 l4'>
+            <div class='post z-depth-1' id='post4'>
+                <div class="post_image" style='padding:0px;'>
+                  <img src="../taj.png" width='100%'>
+                </div>
+                <div class='post_title'>
+                   <h6>Taj Mahal as Title</h6>
+                </div>
+                <div class='author-date'>
+                  <span class='author_name'>Author Name</span>&nbsp;&nbsp;
+                  <span class='publish_date'>1 January, 2018</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class='post_tags'>
+                  <div class="chip"><a href=''>Tag 1</a></div>
+                  <div class="chip"><a href=''>MBA</a></div>
+                  <div class="chip"><a href=''>CAT</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                </div>
+              </div>
+            </div>
+       
+      <!--  ..................................... Post 2 in a row...................................................... -->
+          <div class='col s12 m4 l4'>
+            <div class='post z-depth-1' id='post5'>
+                <div class="post_image" style='padding:0px;'>
+                  <img src="../taj.png" width='100%'>
+                </div>
+                <div class='post_title'>
+                   <h6>Taj Mahal as Title</h6>
+                </div>
+                <div class='author-date'>
+                  <span class='author_name'>Author Name</span>&nbsp;&nbsp;
+                  <span class='publish_date'>1 January, 2018</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class='post_tags'>
+                  <div class="chip"><a href=''>Tag 1</a></div>
+                  <div class="chip"><a href=''>MBA</a></div>
+                  <div class="chip"><a href=''>CAT</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                </div>
+              </div>
+            </div>
+      <!--  ..................................... Post 3 in a row...................................................... -->
+            <div class='col s12 m4 l4'>
+            <div class='post z-depth-1' id='post6'>
+                <div class="post_image" style='padding:0px;'>
+                  <img src="../taj.png" width='100%'>
+                </div>
+                <div class='post_title'>
+                   <h6>Taj Mahal as Title</h6>
+                </div>
+                <div class='author-date'>
+                  <span class='author_name'>Author Name</span>&nbsp;&nbsp;
+                  <span class='publish_date'>1 January, 2018</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class='post_tags'>
+                  <div class="chip"><a href=''>Tag 1</a></div>
+                  <div class="chip"><a href=''>MBA</a></div>
+                  <div class="chip"><a href=''>CAT</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                  <div class="chip"><a href=''>Data Interpretation</a></div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+         <!--  ..................................... All 3 posts in  row2 ends...................................................... -->
       </div>
-    </div>
-    <!-- Main text ends here -->
-  </div>
-      <!-- Main Content ends here-->
+    <!-- Main Content -->
+    <!-- Page content starts here -->
+      </div>
     </div>
   </main>
 <!-- Footer starts here -->
@@ -459,23 +502,11 @@ var formData =  new FormData();
 $(document).ready(function(){
 //MaterializeCSS JS code
 $(".button-collapse").sideNav();
-//To adjust height of side navbar 
-  adjustHeight()
-  //To adjust Blog post cards
-  fixBlogPost()
+adjustHeight()
 
 $(window).resize(function(){
-  //To adjust height of side navbar 
   adjustHeight()
-  //To adjust Blog post cards
-  fixBlogPost()
   });
-
-  function fixBlogPost(){
-    for (var i =0 ; i<2;i++){
-      $('#post'+i+' .post_image img').height($('#post'+i+' .post_text').height());
-    } 
-  }
 
 $(window).scroll(function(){
   if($('#sidebar').width() != $('#maincontent').width()){
