@@ -15,8 +15,10 @@
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
+
   <!-- Font links here -->
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">  
 <style>
 /*blue-4cdef5
 green-a4d555
@@ -38,18 +40,25 @@ nav{
   /*background-color:#4abdac;*/
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77c9d4+0,77c9d4+0,57bc90+100 */
 background: #57bc90; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #77c9d4 0%, #77c9d4 0%, #57bc90 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #77c9d4 0%,#77c9d4 0%,#57bc90 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #77c9d4 0%,#77c9d4 0%,#57bc90 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: -moz-linear-gradient(-45deg, ##77cad5 0%, #77cad5 0%, #57bc90 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #77cad5 0%,#77cad5 0%,#57bc90 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #77cad5 0%,#77cad5 0%,#57bc90 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77cad5', endColorstr='#57bc90',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 nav ul li.active{
-  background-color:#F7b733;
+  background-color:#77cad5;
 }
 
 nav ul li:hover{
-   background-color:#F7b733;
+   background-color:#77cad5;
+}
+
+nav ul li a:hover{
+  background-color:#77cad5;
+  opacity:1;
+  color:white;
+ /* border-bottom:4px solid #57bc90;*/
 }
 
 .brand-logo{
@@ -70,7 +79,7 @@ background: linear-gradient(135deg, #77c9d4 0%,#77c9d4 0%,#57bc90 100%); /* W3C,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', endColorstr='#57bc90',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.side-nav li>a{
+.side-nav a>li{
   color:white;
 }
 
@@ -79,21 +88,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
 
 
 #sidebar{
-  background-color:#37474f;/*424a5d*/
-  color:rgba(255, 255, 255, 0.56);
-/*font-family: 'Lato',sans-serif;*/
+  color:#77cad5;
+  background-color:white;
 }
 
 .sidebaritem:hover{
    background-color:#77c9d4/*68dff0*/;
    color:white;
+   transition: all .35s ease-in;
+  /*background-position: 0 0;*/
 }
 
 .sidebaritem{
   padding:15px 30px;
   cursor:pointer;
-  /*border-bottom: 1px solid grey*/
+  border-bottom: 1px dotted #77cad5;
 }
+
 
  #display_image img{
     display:block;
@@ -103,6 +114,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
  #display_name{
   padding:15px 5px;
   text-align:center;
+  border-bottom: 1px dotted #77cad5;
   /*border-bottom: 1px solid grey*/
  }
 
@@ -110,7 +122,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   vertical-align: middle;
 }
 /*------------------------------------------------CSS for main content----------------------------------------------------*/
+      /*-------------------------------CSS for generic blog posts-------------*/
 
+.tabs .tab a{
+  color:#77cad5;
+}
+
+.tabs .tab a:hover{
+  color:#77cad5;
+}
+
+.tabs .tab a.active{
+  color:#77cad5;
+}
+
+.tabs .indicator{
+  background-color: #57bc90;
+}
 #maincontent{
   background-color:#ffffff;
 }
@@ -122,94 +150,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   -webkit-border-radius: 5px 5px 5px;
   border-radius: 5px 5px 5px;
 }
-/*.post_title h6{
-/*  position: relative;
-/*  font-size: 1.5em;
-  font-weight: bold;*/
- /* padding: 5px 20px 5px 15px;
-  margin: -10px 0px 0px -10px;
-  color: #ffffff;
-  background-color: #57bc90;
-  /*text-shadow: 0px 1px 2px #bbb;*/
-  /*-webkit-box-shadow: 0px 2px 4px #888;
-  -moz-box-shadow: 0px 2px 4px #888;
-  box-shadow: 0px 2px 4px #888;
-  text-align:left;*/
-/*}
 
-.post_title h6:after{
- /* content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0px;
-  top: 100%;
-  border-width: 5px 5px;
-  border-style: solid;
-  border-color: #00562A #00562A transparent transparent;*/
-/*}*/
 
 .padding_post{
   min-width:100%;
 }
 
-.card_title{
-  text-align:center;
-  color:white;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77c9d4+0,77c9d4+0,57bc90+100 */
-  background: #3F51B5; /* Old browsers */
-  padding-bottom:10px;
-}
 
-.main_post_content{
-  
-}
-
-.chip{
-  background-color:#77c9d4;
-  margin-left:2px;
-}
-
-.chip:hover{
-  background-color:#57bc90;
-  margin-left:2px;
-  text-decoration: underline;
-  color:white;
-}
-
-.chip a{
-    color:white;
+.post .chip{
+  background-color:#ffffff;
+  float:right;
+  font-style:'open sans',serif;
 }
 
 .post_tags{
   padding-top:4px;
 }
 
-.author_name{
-  padding-left:0px;
-  padding-right:0px;
-  margin-left:0px;
-  margin-right:0px;
-  color:grey;
-  font-size:10px;
-  margin-top:10px;
-  text-align:left;
-}
 
-.publish_date{
-  padding-left:0px;
-  padding-right:0px;
-  margin-left:0px;
-  margin-right:0px;
-   color:grey;
-  font-size:10px;
-  margin-top:10px;
-  text-align:right;
-}
-
-.card_content{
-  padding-left:10px;
-  padding-right:10px;
+.post_content{
+  padding-left:20px;
+  padding-right:20px;
 }
 
 .post_without_tags{
@@ -219,13 +180,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
 .post_title{
   padding-left:20px;
   padding-right:20px;
-  font-weight:bold;
-  color:#66b9bf;
+  /*font-weight:bold;*/
+  color:#77c9d4;
+  line-height:135%;
+  text-align: center;
+  font-family: 'Open Sans', serif;
+  font-size:1.2em;
+
+}
+
+.post_title:hover{
+  color:#57bc90;
+  text-decoration: underline;
+  cursor:pointer;
 }
 
 .post{
   margin-left:10%;
-  margin-top:4%;
+  margin-top:4%
+}
+
+.post_text{
+  border-top: 4px solid #57bc90;
+}
+
+.load_more{
+  margin-top:20px;
+  width:60%;
+  margin-left:15%;
+  margin-right:auto;
+  background-color: #015249;
 }
 
 /*------------------------------------------------CSS for footer----------------------------------------------------*/
@@ -250,7 +234,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
      display: flex;
      min-height: 100vh;
      flex-direction: column;
-     font-family: 'Lato',sans-serif;
+     font-family: 'Arimo',sans-serif;
  }
  main {
      flex: 1 0 auto;
@@ -270,6 +254,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
   <!-- <link rel="stylesheet" href="css/style.css"> -->
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.0/axios.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
@@ -282,7 +267,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
       <a href="#" class="brand-logo"><img src='../logo.png' width='60vh'></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li class='active'><a href="profile.html">Profile</a></li>
+        <li class=''><a href="profile.html">Profile</a></li>
         <li><a href="courses.html">Available Courses</a></li>
         <li><a href="coursedetail.html">Your Courses</a></li>
         <li><a href="logout.html">Logout</a></li>
@@ -293,6 +278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
         <li><a href="courses.html">Available Courses</a></li>
         <li><a href="coursedetail.html">Your Courses</a></li>
         <li><a href="logout.html">Logout</a></li>
+        <li><a class='back' href="">Back</a></li>
       </ul>
     </div>
   </nav>
@@ -305,8 +291,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
       <div class='inside_sidebar'>
         <ul>
 
-          <li id='display_image' class=''> <img src="../gold.jpeg" width='50%' alt="" class="circle responsive-img"></li>
-          <li id='display_name' class=''>First Name</li>
+          <li id='display_image' class=''><img src="../avatar.jpg" width='50%' alt="" class="circle responsive-img"></li>
+          <li id='display_name' class=''>Welcome Jaydeep</li>
           <li id='item2' class='sidebaritem'> <i class="tiny material-icons verticalalign">developer_board</i>&nbsp;&nbsp;<span class='verticalalign'>Your News</span></li>
           <li id='item3' class='sidebaritem'> <i class="tiny material-icons verticalalign">import_contacts</i>&nbsp;&nbsp;<span class='verticalalign'>Your Courses</span></li>
            <li id='item4' class='sidebaritem'> <i class="tiny material-icons verticalalign">account_circle</i>&nbsp;&nbsp;<span class='verticalalign'>Your Profile</span></li>
@@ -321,6 +307,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
       <div class="col s12 m10 l10" id='maincontent'>
       <!-- Buttons to filter -->
       <div id='main_button'>
+         <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a href="#test1">All</a></li>
+              <li class="tab col s4"><a class="active" href="#test2">Blog Articles</a></li>
+              <li class="tab col s4"><a href="#test4">Course Notifications</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- Main text starts here -->
       <div id='main_text'>
@@ -330,94 +325,103 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c9d4', end
             <div class='row post z-depth-1' id='post1'>
               <!-- Image + Post text div  starts here -->
                <!-- Image div  starts here -->
-                <div class="col s5 m5 l5 post_image" style='padding:0px;'>
+                <div class="col s12 m5 l5 post_image" style='padding:0px;'>
                   <img src="../taj.png" width='100%'>
                 </div>
                  <!-- Image  div  ends here -->
                   <!-- Post text div  starts here -->
-                <div class='col s7 m7 l7 post_text'>
+                <div class='col s12 m7 l7 post_text'>
                 <div class='post_title'>
-                   <h5>Tips to crack CAT 2018 exam - Quantitative Aptitute section</h5>
+                   Tips to crack CAT 2018 exam - Quantitative Aptitute section
                 </div>
-                <div class='author-date'>
-                  <div class='row'>
-                    <div class='col s5 m5 l5 author_name'><i class="tiny material-icons verticalalign">account_circle</i>&nbsp;&nbsp;<span class='verticalalign'>Author Name</span></div>&nbsp;&nbsp;
-                    <div class='col s5 m5 l5 publish_date'><i class="tiny material-icons verticalalign">account_circle</i>&nbsp;&nbsp;<span class='verticalalign'>1 Jan, 2018</span></div>
-                  </div>
-                </div>
-                <div class="card_content">
+                
+                <div class="post_content">
                   <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                    I am convenient because I require little markup to use effectively.
+                  </p>
+                </div>
+
+
+                <div class="chip author">
+                  <img src="../avatar.jpg" alt="Contact Person">
+                  Jane Doe, 3 mins ago
                 </div>
               </div>
                <!--  Post text div  ends here -->
              <!-- Image + Post text div  ends here -->
-             <!-- Tags div starts  here -->
-             <!--  <div class='col s12 m12 l12'>
-                <div class='post_tags'>
-                  <div class="chip"><a href=''>Tag 1</a></div>
-                  <div class="chip"><a href=''>MBA</a></div>
-                  <div class="chip"><a href=''>CAT</a></div>
-                  <div class="chip"><a href=''>Data Interpretation</a></div>
-                  <div class="chip"><a href=''>Data Interpretation</a></div>
-                </div>
-              </div> -->
-              <!-- Tags div  ends here -->
           </div>
         </div>
         <!-- Post 1 ends here -->
         <!-- Post 2 starts here -->
-          <div class='col s12 m10 l10'>
-            <div class='row post z-depth-1' id='post1'>
+         <div class='col s12 m10 l10'>
+            <div class='row post z-depth-1' id='post2'>
               <!-- Image + Post text div  starts here -->
                <!-- Image div  starts here -->
-                <div class="col s5 m5 l5 post_image" style='padding:0px;'>
-                  <img src="../taj.png" width='100%'>
+                <div class="col s12 m5 l5 post_image" style='padding:0px;'>
+                  <img src="../books.Jpeg" width='100%'>
                 </div>
                  <!-- Image  div  ends here -->
                   <!-- Post text div  starts here -->
-                <div class='col s7 m7 l7 post_text'>
+                <div class='col s12 m7 l7 post_text'>
                 <div class='post_title'>
-                   <h5>Tips to crack CAT 2018 exam - Quantitative Aptitute section</h5>
+                   Tips to crack CAT 2018 exam - Verbal Ability section
                 </div>
-                <div class='author-date'>
-                  <div class='row'>
-                    <div class='col s5 m5 l5 author_name'><i class="tiny material-icons verticalalign">account_circle</i>&nbsp;&nbsp;<span class='verticalalign'>Author Name</span></div>&nbsp;&nbsp;
-                    <div class='col s5 m5 l5 publish_date'><i class="tiny material-icons verticalalign">account_circle</i>&nbsp;&nbsp;<span class='verticalalign'>1 Jan, 2018</span></div>
-                  </div>
-                </div>
-                <div class="card_content">
+                
+                <div class="post_content">
                   <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.
-                I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                    I am convenient because I require little markup to use effectively.
+                  </p>
+                </div>
+
+
+                <div class="chip author">
+                  <img src="../avatar.png" alt="Contact Person">
+                  Jane Doe, 4 mins ago
                 </div>
               </div>
                <!--  Post text div  ends here -->
              <!-- Image + Post text div  ends here -->
-             <!-- Tags div starts  here -->
-             <!--  <div class='col s12 m12 l12'>
-                <div class='post_tags'>
-                  <div class="chip"><a href=''>Tag 1</a></div>
-                  <div class="chip"><a href=''>MBA</a></div>
-                  <div class="chip"><a href=''>CAT</a></div>
-                  <div class="chip"><a href=''>Data Interpretation</a></div>
-                  <div class="chip"><a href=''>Data Interpretation</a></div>
-                </div>
-              </div> -->
-              <!-- Tags div  ends here -->
           </div>
         </div>
         <!-- Post 2 ends here -->
+
+        <!-- Post 3 starts here -->
+         <div class='col s12 m10 l10'>
+            <div class='row post z-depth-1' id='post3'>
+              <!-- Image + Post text div  starts here -->
+               <!-- Image div  starts here -->
+                <div class="col s12 m5 l5 post_image" style='padding:0px;'>
+                  <img src="../di.Jpeg" width='100%'>
+                </div>
+                 <!-- Image  div  ends here -->
+                  <!-- Post text div  starts here -->
+                <div class='col s12 m7 l7 post_text'>
+                <div class='post_title'>
+                   Tips to crack CAT 2018 exam - Data Interpretation section
+                </div>
+                
+                <div class="post_content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.
+                  </p>
+                </div>
+
+
+                <div class="chip author">
+                  <img src="../avatar.png" alt="Contact Person">
+                  Jane Doe, 5 mins ago
+                </div>
+              </div>
+               <!--  Post text div  ends here -->
+             <!-- Image + Post text div  ends here -->
+          </div>
+        </div>
+        <!-- Post 3 ends here -->
       </div>
     </div>
     <!-- Main text ends here -->
+    <!-- Load More Button here -->
+    <a class="waves-effect waves-light btn load_more"><i class="material-icons verticalalign">add_box</i>&nbsp;<span class='verticalalign'>Load more</span></a>
   </div>
       <!-- Main Content ends here-->
     </div>
@@ -459,6 +463,10 @@ var formData =  new FormData();
 $(document).ready(function(){
 //MaterializeCSS JS code
 $(".button-collapse").sideNav();
+
+$('#mobile-demo .back').click(function(){
+  $('.button-collapse').sideNav('hide');
+})
 //To adjust height of side navbar 
   adjustHeight()
   //To adjust Blog post cards
@@ -472,7 +480,7 @@ $(window).resize(function(){
   });
 
   function fixBlogPost(){
-    for (var i =0 ; i<2;i++){
+    for (var i =1 ; i<=3;i++){
       $('#post'+i+' .post_image img').height($('#post'+i+' .post_text').height());
     } 
   }
@@ -514,39 +522,30 @@ $(window).scroll(function(){
     
   }
 
-//Jquery based animation
-$('.post').hover(function(){
-  $(this).addClass('z-depth-4').removeClass('z-depth-1')
-},function(){
-  $(this).addClass('z-depth-1').removeClass('z-depth-4')
-})
 
-//Animate CSS JS Code
-  function addHoverAnimation(className,animation, infinite=0){
-    $(className).hover(
-    function(){
-      if (infinite == 0) {
-        $(this).addClass('animated '+ animation);
-      }else{
-        $(this).addClass('animated infinite '+ animation);
-      }
-      
-  }, 
-  function(){
-    if (infinite == 0) {
-        $(this).removeClass('animated '+ animation);
-      }else{
-        $(this).removeClass('animated infinite '+ animation);
-      }
-      
-  })
-  
+
+//Jquery animate library JS Code
+
+  function animateDOM(className,css_initialvalue,transition_finalvalue){
+      $(className).css(css_initialvalue);
+      $(className).transition(transition_finalvalue);
   }
 
-  
-  addHoverAnimation('#sidebar li .sidebaritem','fadeIn')
-  addHoverAnimation('nav ul li', 'fadeIn')
+  animateDOM('#display_image',{'scale':'0'},{'scale':'1',duration:400,easing:'in'})
+  animateDOM('.sidebaritem,#display_name',{'x':'-50px'},{'x':'0px',duration:400,easing:'in'})
+  animateDOM('nav ul li',{'y':'-50px'},{'y':'00px',duration:400,easing:'in'})
+  for(i=1;i<=3;i++){
+    if(i%2 == 0){
+      animateDOM('#post'+i,{'opacity':'0', 'scale':'0'},{'opacity':'1', 'scale':'1',duration:1000,easing:'in'}) 
+     }else{
+      animateDOM('#post'+i,{'opacity':'0', 'scale':'0'},{'opacity':'1', 'scale':'1',duration:1000,easing:'in'}) 
+     } 
+    }
 
+
+  function some_callback(){
+    console.log('done')
+  }
   //API Call JS Code
   get_user_details()
   
